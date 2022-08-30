@@ -1,37 +1,54 @@
+<!--Instrução para o navegador saber em que versão do HTML está o arquivo.-->
 <!DOCTYPE html>
+<!--Marcador que inícia o código html.-->
 <html>
 
+<!--Contém informações gerais sobre o documento, como título, meta e css-->  
 <head>
-
+  
+  <!-- Indica qual conjunto de caracteres será usado para renderizar o texto da página--> 
   <meta charset="UTF-8">
+  <!--Nome que fica na aba do navegador-->
   <title>Document</title>
 
+  <!--Link que implementa o Bootstrap a página-->
   <!-- Bootstrap - CSS -->
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!--Link que aplica o arquivo css a página-->
   <!-- Estilo da aplicação -->
   <link rel="stylesheet" href="css/index.css">
 
 
 </head>
 
+<!--Define o que será mostrado para o usuário na página-->
 <body>
 
+  <!--Cabeçalho da página, onde se encontra o menu de navegação da página  -->
   <header>
     <!-- Toolbar -->
+    <!--Uma seção com links que apontam para outors sites-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!--O marcador div é usada para criar um container vazio que pode ser utilizado para agrupar elementos, o class="container" é um elemento do Bootstrap usado para ajustar as dimensões do conteúdo dentro da div-->
       <div class="container-fluid">
+       <!--o marcador A permite o direcionamento a outros links, a classe "navbar-brand" server para assoiar o marcador a ao arquivo css--> 
         <a class="navbar-brand" href="#">
           Coffee
           <small>Arábica</small>
         </a>
 
+        <!--O marcador button cria um botão, os demais itens da linha são alterrações visuais vindas do bootstrap--> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--Funciona como o div, com a diferencça de ser um container a nivel de linha.-->
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!--Id serve como uma identidade única para cada marcador, servindo por exemplo, para aplicação de estilo exclusivamente naquele elemento-->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!--Cira uma lista desorndenada-->
           <ul class="navbar-nav">
+            <!--Itens da lista-->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -47,9 +64,13 @@
     </nav>
   </header>
 
+  <!--Corpo da página-->
   <main>
+    <!--Cria seções independentes na página.-->
     <section>
+      <!--Carrossel criado pelo Bootstrap-->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!--Botões para interagir com o carrossel-->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -58,8 +79,10 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
 
+            <!--Caminho da imagem usada no carrossel-->
             <img src="https://images.unsplash.com/photo-1609593147714-46c546d38137?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80" class="d-block w-100" alt="...">
 
+            <!--Adiciona textos junto com a imagem do carrossel-->
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -95,6 +118,8 @@
             </div>
           </div>
         </div>
+        
+        <!--Botões para controlar o carrossel--> 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -108,19 +133,24 @@
     </section>
 
     <section>
+      <!--Texto que será exibido no corpo da página-->
       <h1>Minha aplicação com JS!</h1>
 
+      <!--Hiperlink que redireciona para outra página-->
       <a href="semana3_atividade1.html">Semana 3</a>
 
+      <!--Texto que será exibido no corpo da página-->
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptate vero voluptas quo ipsum alias repellat quibusdam ipsam asperiores laboriosam veritatis earum porro, provident sequi aspernatur nisi eius, iste odio.</p>
     </section>
 
   </main>
 
+  <!--Rodapé da página-->
   <footer></footer>
 
 
   <!-- Bootstrap - Js -->
+  <!--Aplica o JavaScript a página-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
