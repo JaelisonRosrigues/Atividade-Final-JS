@@ -1,24 +1,37 @@
+<!--Instrução para o navegador saber em que versão do HTML está o arquivo.-->
 <!DOCTYPE html>
+<!--Marcador que inícia o código html.-->
 <html lang="en">
 
+<!--Contém informações gerais sobre o documento, como título, meta e css-->
 <head>
+    <!-- Indica qual conjunto de caracteres será usado para renderizar o texto da página-->
     <meta charset="UTF-8">
+    <!--Nome que fica na aba do navegador-->
     <title>Hello world - Bootstrap</title>
+    <!--Link que aplica o arquivo css a página-->
     <link rel="stylesheet" href="css/estilo.css">
     <!-- Bootstrap -->
+    <!--Link que implementa o Bootstrap a página-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-
+<!--Define o que será mostrado para o usuário na página-->
 <body>
 
+    <!--O marcador div é usada para criar um container vazio que pode ser utilizado para agrupar elementos, o class="container" é um elemento do Bootstrap usado para ajustar as dimensões do conteúdo dentro da div-->
     <div class="container">
+        <!--Uma seção com links que apontam para outors sites-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
+                <!--o marcador a permite o direcionamento a outros links, a classe "navbar-brand" server para assoiar o marcador a ao arquivo css--> 
                 <a class="navbar-brand" href="#">Navbar</a>
-
+                
+                <!--Id serve como uma identidade única para cada marcador, servindo por exemplo, para aplicação de estilo exclusivamente naquele elemento-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--Cira uma lista desorndenada-->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!--Itens da lista-->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./">Home</a>
                         </li>
