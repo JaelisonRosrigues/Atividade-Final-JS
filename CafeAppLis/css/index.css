@@ -1,5 +1,9 @@
+/*Classe que sofrerá influência deste código*/
 .navbar-brand {
+  /*Define a altura da linha*/
   line-height: 1;
+  /*Indica como os elementos serão dispostos na página*/
   display: block;
+  /*Defin o alinhamento do texto*/
   text-align: center;
 }
