@@ -1,3 +1,4 @@
+//Lista com os itens do cardápio em formato JSON
 const dataset = [
   {
     id: 1,
@@ -29,4 +30,5 @@ const dataset = [
   },
 ];
 
+//Permite que esse arquivo seja exportado
 export default dataset;
