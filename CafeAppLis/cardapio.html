@@ -1,31 +1,50 @@
+<!--Instrução para o navegador saber em que versão do HTML está o arquivo.-->
 <!DOCTYPE html>
+<!--Marcador que inícia o código html.-->
 <html>
 
+<!--Contém informações gerais sobre o documento, como título, meta e css-->
+
 <head>
+  <!-- Indica qual conjunto de caracteres será usado para renderizar o texto da página-->
   <meta charset="UTF-8">
+  <!--Nome que fica na aba do navegador-->
   <title>Cardápio</title>
 
   <!-- Bootstrap - CSS -->
+  <!--Link que implementa o Bootstrap a página-->
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
+<!--Define o que será mostrado para o usuário na página-->
+
 <body>
+  <!--Cabeçalho da página, onde se encontra o menu de navegação da página  -->
   <header>
     <!-- Toolbar -->
+    <!--Uma seção com links que direcionam para outras páginas-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!--O marcador div é usada para criar um container vazio que pode ser utilizado para agrupar elementos, o class="container" é um elemento do Bootstrap usado para ajustar as dimensões do conteúdo dentro da div-->
       <div class="container-fluid">
+        <!--o marcador A permite o direcionamento a outros links, a classe "navbar-brand" server para assoiar o marcador a ao arquivo css-->
         <a class="navbar-brand" href="#">
           Coffee
+          <!--Diminue o tamanho do texto-->
           <small>Arábica</small>
         </a>
 
+        <!--O marcador button cria um botão, os demais itens da linha são alterrações visuais vindas do bootstrap-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--Funciona como o div, com a diferencça de ser um container a nivel de linha.-->
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!--Id serve como uma identidade única para cada marcador, servindo por exemplo, para aplicação de estilo exclusivamente naquele elemento-->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!--Cira uma lista desorndenada-->
           <ul class="navbar-nav">
+            <!--Itens da lista-->
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
@@ -41,13 +60,16 @@
     </nav>
 
   </header>
+  <!--Corpo da página-->
   <main>
+    <!--Cria seções independentes na página.-->
     <section class="my-3">
 
       <!-- Grid -->
       <div class="container">
 
         <!-- Button trigger modal -->
+        <!--Botão que ativa o modal,data-bs-target vincula o botão ao modal pelo id do mesmo -->
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           +
         </button>
@@ -65,11 +87,15 @@
                 <h1>Conteúdo do modal</h1>
 
                 <!-- Formulário -->
+                <!--Cira um Formulário-->
                 <form id="foodForm">
                   <div class="mb-3">
                     <!-- Nome -->
+                    <!--Adiciona palavras junto com o campo de preenchimento(input)-->
                     <label for="nome" class="form-label">Nome</label>
+                    <!--Caixa para o usuário digitar o que se pede-->
                     <input type="text" name="nome" id="nome" class="form-control">
+                    <!--Instruções para auxiliar o usuário-->
                     <div id="nomeHelp" class="form-text">Adicione o nome do Alimento.</div>
                   </div>
 
@@ -91,10 +117,12 @@
                     <input type="text" name="imagem" id="imagem" class="form-control">
                   </div>
 
+                  <!--Adiciona o botão "Fechar" ao modal -->
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
 
                     <!-- <input type="submit" value="Adicionar"> -->
+                    <!--Adiciona o botão que submete asa informações inserida no modal-->
                     <button type="submit" class="btn btn-primary" id="adicionarFoodButton">
                       Adicionar
                     </button>
@@ -108,6 +136,7 @@
         </div>
 
         <!-- Linha -->
+        <!--Div onde serão inseridos os card criados no JavaScript-->
         <div id="itens-cardapio" class="row">
 
           <!-- Colunas-->
@@ -118,12 +147,15 @@
     </section>
 
   </main>
+  <!--Rodapé da página-->
   <footer></footer>
 
   <!-- Cardápio -->
+  <!--Vincula o arquivo JavaScript a essa página-->
   <script src="./js/cardapio.js" type="module"></script>
 
   <!-- Bootstrap - Js -->
+  <!--Bootstrap que irá atuar na aplicação JavaScript da página.-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
